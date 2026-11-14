@@ -1,0 +1,57 @@
+# ===== 敏感信息（最容易误提交，优先看这里）=====
+# 用户私有配置：含真实 up_id / 本机路径 / 设备号。切勿提交！
+config/user.json
+# 旧位置的配置（已迁移，若存在也不提交）
+/config.json
+config_dl.json
+*.local.json
+.env
+.env.*
+
+# ===== 构建产物 =====
+douyulubo.exe
+bin/
+dist/
+build/
+*.spec
+
+# ===== 运行时产物 =====
+workspace/
+data/
+downloads/
+danmaku/
+danmaku_ass/
+tmp/
+logs/
+*_progress.json
+*_errors.json
+*_failed.json
+*.log
+*.ts
+*.mp4
+*.xml
+*.ass
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# ===== Node =====
+node_modules/
+npm-debug.log*
+
+# ===== 编辑器 / OS =====
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ===== 凭据（防误提交）=====
+*.key
+*.pem
+*_credentials*
+*_secret*
+.ssh/

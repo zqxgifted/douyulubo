@@ -1,0 +1,26 @@
+{
+  "name": "douyu-vod-toolkit",
+  "version": "0.0.1",
+  "description": "斗鱼录播（v.douyu.com）批量下载与归档工具箱：场次/分段抓取、最高画质下载、弹幕导出、画质与体积核查",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "probe:size": "node scripts/step5_probe_size_all.js",
+    "probe:quality": "node scripts/step5_probe_quality_all.js",
+    "m3u8": "node scripts/lib_get_m3u8.js"
+  },
+  "keywords": [
+    "douyu",
+    "vod",
+    "hls",
+    "m3u8",
+    "danmaku",
+    "archiver"
+  ],
+  "license": "MIT",
+  "author": "douyu-vod-toolkit contributors",
+  "notice": "See NOTICE and THIRD_PARTY_NOTICES.md for third-party attributions",
+  "private": false
+}

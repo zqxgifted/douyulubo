@@ -1,0 +1,13 @@
+{
+  "_说明": "复制为 config.json 后填写。不要把真实的 up_id / did / 路径提交到仓库。",
+  "up_id": "REPLACE_WITH_UP_ID",
+  "work_dir": "./workspace",
+  "concurrent": 2,
+  "ffmpeg": "ffmpeg",
+  "danmaku_factory": "",
+  "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36",
+  "did": "",
+  "workers_per_task": 8,
+  "min_file_mb": 100,
+  "anchor_name": ""
+}

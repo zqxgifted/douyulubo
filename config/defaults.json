@@ -1,0 +1,39 @@
+{
+  "_comment": "通用默认配置（可安全提交到 GitHub）。不要在这里写真实 up_id 或本机绝对路径。用户私有配置请写在 config/user.json。",
+
+  "concurrent": 2,
+  "workers_per_task": 8,
+  "min_file_mb": 100,
+
+  "quality": "highest",
+  "danmaku_mode": "ass",
+  "skip_downloaded": true,
+
+  "transcode_enabled": false,
+  "transcode_codec": "h265",
+  "transcode_quality": "balanced",
+  "transcode_qp": -1,
+  "transcode_preset": 5,
+  "transcode_suffix": "",
+  "transcode_delete_src": false,
+  "transcode_audio_encode": false,
+  "transcode_merge_ts": true,
+
+  "font_name": "微软雅黑",
+  "font_size": 50,
+  "font_size_strict": false,
+  "scroll_duration": 8.0,
+  "fixed_duration": 4.5,
+  "line_spacing": 0,
+  "top_margin": 0,
+  "bottom_margin": 0,
+  "opacity": 255,
+  "outline": 1.0,
+  "shadow": 0.0,
+  "bold": false,
+  "displayarea": 1.0,
+  "scrollarea": 1.0,
+  "time_shift": 0.0,
+  "no_overlap": true,
+  "block_types": []
+}

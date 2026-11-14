@@ -1,0 +1,9 @@
+{
+  "_comment": "复制为 user.json 后填写。此模板不含真实数据，可安全提交。",
+  "up_id": "<YOUR_UP_ID>",
+  "work_dir": "",
+  "danmaku_factory": "",
+  "_up_id_hint": "主播录播页 https://v.douyu.com/author-replay/<这段>",
+  "_work_dir_hint": "留空 = 程序目录下的 downloads 文件夹",
+  "_danmaku_factory_hint": "DanmakuFactory.exe 路径，仅 XML->ASS 转换需要"
+}
