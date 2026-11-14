@@ -116,17 +116,9 @@ node core/douyu.mjs doctor     # 检查环境
 
 ## 参考资料
 
-- **renmu123/douyu-video-cli** — 斗鱼视频 API 与签名机制的参考实现。
-  <https://github.com/renmu123/douyu-video-cli>
-
-- **B站弹幕 XML 格式规范** — 本项目弹幕 XML 输出的格式依据。
-  <https://socialsisteryi.github.io/bilibili-API-collect/docs/danmaku/danmaku_xml.html>
-
-- **DanmakuFactory** — 可选的 XML → ASS 转换工具，不随本项目分发。
-  <https://github.com/hihkm/DanmakuFactory>
-
-本项目未复制上述项目的源码文件，详细归属说明见
-[docs/THIRD_PARTY_NOTICES.md](docs/THIRD_PARTY_NOTICES.md)。
+- [renmu123/douyu-video-cli](https://github.com/renmu123/douyu-video-cli) — 斗鱼视频 API 与签名机制的参考实现
+- [B站弹幕 XML 格式规范](https://socialsisteryi.github.io/bilibili-API-collect/docs/danmaku/danmaku_xml.html) — 弹幕 XML 输出格式依据
+- [DanmakuFactory](https://github.com/hihkm/DanmakuFactory) — 可选的 XML → ASS 转换工具
 
 ---
 
