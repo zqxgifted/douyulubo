@@ -116,39 +116,16 @@ node core/douyu.mjs doctor     # 检查环境
 
 ## 参考资料
 
-本项目在实现过程中参考了以下公开项目与文档。**未复制任何上游源码文件**，
-保留归属是为了尊重「参考了别人的实现」这一事实。
+- **renmu123/douyu-video-cli** — 斗鱼视频 API 与签名机制的参考实现。
+  <https://github.com/renmu123/douyu-video-cli>
 
-### renmu123/douyu-video-cli
+- **B站弹幕 XML 格式规范** — 本项目弹幕 XML 输出的格式依据。
+  <https://socialsisteryi.github.io/bilibili-API-collect/docs/danmaku/danmaku_xml.html>
 
-- 仓库：<https://github.com/renmu123/douyu-video-cli>
-- 作者：renmu123
-- 许可证：仓库根为 **GPL-3.0**；其 `packages/douyu-api/package.json` 声明 **MIT**（上游自身声明冲突）
+- **DanmakuFactory** — 可选的 XML → ASS 转换工具，不随本项目分发。
+  <https://github.com/hihkm/DanmakuFactory>
 
-参考内容：
-
-| 参考点 | 本项目位置 |
-|---|---|
-| 播放页签名脚本提取（取倒数第二个 `<script>`、正则写法） | `src/douyu.mjs` |
-| `CryptoJS.MD5` 用 `node:crypto` 注入后执行页面脚本 | `src/douyu.mjs` |
-| `point_id + did + 时间戳` 签名机制 | `src/douyu.mjs` |
-| 斗鱼 wgapi 公开端点与参数 | `docs/API.md`、`scripts/` |
-| 弹幕 `getBarrageList` 分页与 B站 XML 字段结构 | `src/douyu.mjs`、`scripts/step4_pull_danmaku.py` |
-
-**没有做**：未 vendored 任何 `.ts` 文件，未 `import` 该包，未依赖其 `axios` /
-`safe-eval` / `fast-xml-parser`，未使用其 CLI 的订阅、上传等功能。
-
-> ⚠️ 上游许可证声明存在冲突（仓库 GPL-3.0 vs 子包 MIT）。
-
-### 其它公开资料
-
-| 名称 | 链接 | 关系 |
-|---|---|---|
-| B站弹幕 XML 格式 | [规范文档](https://socialsisteryi.github.io/bilibili-API-collect/docs/danmaku/danmaku_xml.html) | 遵循该公开数据格式 |
-| DanmakuFactory | [hihkm/DanmakuFactory](https://github.com/hihkm/DanmakuFactory) | 可选外部工具，不随本项目分发 |
-| ffmpeg | [ffmpeg.org](https://ffmpeg.org/) | 可选外部工具，不随本仓库分发 |
-
-详细的逐项说明（含上游 MIT 声明全文、冲突分析）见
+本项目未复制上述项目的源码文件，详细归属说明见
 [docs/THIRD_PARTY_NOTICES.md](docs/THIRD_PARTY_NOTICES.md)。
 
 ---
