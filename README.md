@@ -102,17 +102,33 @@ node core/douyu.mjs doctor     # 检查环境
 
 ---
 
+## 目录结构
+
+```
+├── config/       配置（defaults.json 通用 / user.json 私有）
+├── core/         命令行入口 douyu.mjs
+├── gui/          tkinter 图形界面
+├── scripts/      抓取、下载、转码、弹幕各步骤脚本
+├── src/          共用的核心模块
+├── docs/         详细文档
+└── examples/     配置示例
+```
+
+---
+
 ## 文档
 
 | 文档 | 内容 |
 |---|---|
 | [config/README.md](config/README.md) | 全部配置项说明 |
+| [scripts/README.md](scripts/README.md) | 各脚本用途一览 |
+| [docs/README.md](docs/README.md) | 详细文档索引 |
 | [docs/API.md](docs/API.md) | 使用的斗鱼公开接口 |
 | [docs/CONFIG.md](docs/CONFIG.md) | 配置优先级与进阶用法 |
 | [docs/DANMAKU.md](docs/DANMAKU.md) | 弹幕与 ASS 字幕 |
 | [docs/GUI.md](docs/GUI.md) | 界面操作说明 |
 | [docs/PITFALLS.md](docs/PITFALLS.md) | 常见问题 |
-| [THIRD_PARTY_NOTICES.md](docs/THIRD_PARTY_NOTICES.md) | 第三方来源与归属 |
+| [docs/THIRD_PARTY_NOTICES.md](docs/THIRD_PARTY_NOTICES.md) | 第三方来源与归属 |
 
 ---
 
